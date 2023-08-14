@@ -53,6 +53,7 @@ const monacoThemes = {
 
 const defineTheme = (theme) => {
     return new Promise((res) => {
+        console.log(theme);
         Promise.all([
             loader.init(),
             import(`monaco-themes/themes/${monacoThemes[theme]}.json`),

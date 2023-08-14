@@ -103,6 +103,7 @@ const Landing = () => {
                     );
                 }
                 setProcessing(false);
+                showErrorToast(error);
                 console.log("catch block...", error);
             });
     };
