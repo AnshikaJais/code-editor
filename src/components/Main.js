@@ -15,7 +15,7 @@ import useKeyPress from "../hooks/useKeyPress.js";
 
 
 const javascriptDefault = `/**
-* Problem: Fctorial of a number */
+* Problem: Factorial of a number */
 
 const fact = (n) =>{
     var fac = 1;
@@ -47,7 +47,7 @@ const Landing = () => {
         if (enter && ctrl) {
             handleCompile();
         }
-    }, [enter, ctrl]);
+    }, );
 
     const onChange = (action, data) => {
         switch (action) {
@@ -61,7 +61,7 @@ const Landing = () => {
         }
     };
 
-    const handleCompile = () => {
+    function handleCompile  ()  {
         setProcessing(true);
 
         const formData = {
